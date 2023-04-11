@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  # сервис frontend
+  telegrambot:
+
+    # Создаем образ frontend через Dockerfile
+    build: ./app
+
+    # всегда рестартовать контейнеры в случае их остановки
+    restart: always
